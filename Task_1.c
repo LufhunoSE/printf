@@ -1,6 +1,6 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdarg.h>
-#include <main.h>
 
 /**
  * _printf - Print formatted output according to a format string.
