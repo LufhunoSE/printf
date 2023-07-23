@@ -65,5 +65,6 @@ void print_buffer(char buffer[], int *buff_ind)
 	*buff_ind = 0;
 }
 /**
- * collab: Terry & Lerato
+ * collaborators: Terry & Lerato
+ * 
  */
