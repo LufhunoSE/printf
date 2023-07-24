@@ -3,16 +3,19 @@
 #include "main.h"
 
 /**
- * _printf - Printf function
- * @format: format.
- * Return: Printed chars.
+ * _printf - Produces output according to a format.
+ * @format: A character string containing format specifiers.
+ *
+ * Return: The number of characters printed (excluding the null byte used to
+ * end output to strings).
  */
 
 int _printf(const char *format, ...)
 {
 	va_list ourTally;
+	int count = 0;
+
 	va_start(ourTally, *format);
-	char count = 0;
 
 	while (*format)
 	{
@@ -61,6 +64,9 @@ int _printf(const char *format, ...)
 	return (count);
 }
 
+/** 
+ * main to print out string characters and interegers
+ */
 int main(void)
 {
 	int num = 65;
