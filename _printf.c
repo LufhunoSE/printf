@@ -64,8 +64,10 @@ int _printf(const char *format, ...)
 	return (count);
 }
 
-/** 
- * main to print out string characters and interegers
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
  */
 int main(void)
 {
