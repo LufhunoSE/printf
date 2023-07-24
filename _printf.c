@@ -11,9 +11,8 @@
 int _printf(const char *format, ...)
 {
 	va_list ourTally;
-	va_start(ourTally, format);
-
-	int count = 0;
+	va_start(ourTally, *format);
+	char count = 0;
 
 	while (*format)
 	{
@@ -61,12 +60,6 @@ int _printf(const char *format, ...)
 	va_end(ourTally);
 	return (count);
 }
-
-/**
- * _printf - Printf function
- * @format: format.
- * Return: Printed chars.
- */
 
 int main(void)
 {
