@@ -27,6 +27,7 @@ int _printf(const char *format, ...)
 				case 'c':
 				{
 					int c = va_arg(ourTally, int);
+
 					putchar(c);
 					count++;
 					break;
@@ -34,6 +35,7 @@ int _printf(const char *format, ...)
 				case 's':
 				{
 					const char *str = va_arg(ourTally, const char *);
+
 					while (*str)
 					{
 						putchar(*str);
@@ -72,7 +74,9 @@ int _printf(const char *format, ...)
 int main(void)
 {
 	int num = 65;
+
 	char str[] = "Team work makes the dream work!";
+
 	_printf("Character: %c\n", 'A');
 	_printf("String: %s\n", str);
 	_printf("Integer: %d\n", num);
